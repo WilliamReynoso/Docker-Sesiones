@@ -40,7 +40,7 @@ def get_db_connection():
 def login_required(f):
     def wrap(*args, **kwargs):
         if not session.get('authenticated'):
-            return redirect(url_for('login'))
+            return {"error": "usuario no authenticado"}
         return f(*args, **kwargs)
     wrap.__name__ = f.__name__
     return wrap
