@@ -10,7 +10,7 @@ RUN mkdir -p /docker-entrypoint-initdb.d
 COPY ./scripts/query_base.sql /docker-entrypoint-initdb.d/
 
 # Instalar dependencias de Python
-RUN pip install flask psycopg2 Flask-Limiter
+RUN pip install flask psycopg2 Flask-Limiter bcrypt
 
 WORKDIR /code 
 
