@@ -22,7 +22,7 @@ No se hace uso de set_cookie ya que session se ejecuta por encima de las cookies
 Empezamos registrandonos en la ruta localhost/register usando Postman:
 ![imagen](https://github.com/user-attachments/assets/0b711dc2-4458-478b-90ce-c17c52932a73)
 
-Si intento registrarme de nuevo da error ya que solo permite registrarse si el usuario y el email no se repiten, pasa lo mismo (si intento enviar datos incompletos).
+Si intento registrarme de nuevo da error ya que solo permite registrarse si el usuario y el email no se repiten (pasa lo mismo si intento enviar datos incompletos).
 ![imagen](https://github.com/user-attachments/assets/ac87d4ff-fc03-4890-88e0-929a83156df7)
 
 Una vez registrado puedo iniciar sesion en localhost/login enviando mi username y password.
