@@ -1,0 +1,121 @@
+create table users (
+  id bigint primary key generated always as identity,
+  first_name text not null,
+  last_name text not null,
+  email text not null unique,
+  device text check (device in ('desktop', 'mobile')) not null
+);
+
+insert into
+  users (first_name, last_name, email, device)
+values
+  ('John', 'Doe', 'john.doe@example.com', 'desktop'),
+  (
+    'Jane',
+    'Smith',
+    'jane.smith@example.com',
+    'mobile'
+  ),
+  (
+    'Alice',
+    'Johnson',
+    'alice.johnson@example.com',
+    'desktop'
+  ),
+  ('Bob', 'Brown', 'bob.brown@example.com', 'mobile'),
+  (
+    'Charlie',
+    'Davis',
+    'charlie.davis@example.com',
+    'desktop'
+  ),
+  (
+    'Diana',
+    'Miller',
+    'diana.miller@example.com',
+    'mobile'
+  ),
+  (
+    'Eve',
+    'Wilson',
+    'eve.wilson@example.com',
+    'desktop'
+  ),
+  (
+    'Frank',
+    'Moore',
+    'frank.moore@example.com',
+    'mobile'
+  ),
+  (
+    'Grace',
+    'Taylor',
+    'grace.taylor@example.com',
+    'desktop'
+  ),
+  (
+    'Hank',
+    'Anderson',
+    'hank.anderson@example.com',
+    'mobile'
+  ),
+  (
+    'Ivy',
+    'Thomas',
+    'ivy.thomas@example.com',
+    'desktop'
+  ),
+  (
+    'Jack',
+    'Jackson',
+    'jack.jackson@example.com',
+    'mobile'
+  ),
+  (
+    'Kara',
+    'White',
+    'kara.white@example.com',
+    'desktop'
+  ),
+  (
+    'Leo',
+    'Harris',
+    'leo.harris@example.com',
+    'mobile'
+  ),
+  (
+    'Mia',
+    'Martin',
+    'mia.martin@example.com',
+    'desktop'
+  ),
+  (
+    'Nina',
+    'Thompson',
+    'nina.thompson@example.com',
+    'mobile'
+  ),
+  (
+    'Oscar',
+    'Garcia',
+    'oscar.garcia@example.com',
+    'desktop'
+  ),
+  (
+    'Paul',
+    'Martinez',
+    'paul.martinez@example.com',
+    'mobile'
+  ),
+  (
+    'Quinn',
+    'Robinson',
+    'quinn.robinson@example.com',
+    'desktop'
+  ),
+  (
+    'Rita',
+    'Clark',
+    'rita.clark@example.com',
+    'mobile'
+  );
